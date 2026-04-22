@@ -23,9 +23,9 @@ jobs:
             python -m py_compile Activity_6.py
 
       - run:
-          name: Run tests (optional)
+          name: Run tests 
           command: |
-            pytest || echo "No tests yet"
+            pytest
 
 workflows:
   version: 2
