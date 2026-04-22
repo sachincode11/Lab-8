@@ -16,6 +16,7 @@ jobs:
       - run:
           name: Check Python syntax
           command: |
+            python -m py_compile Activity_1.py
             python -m py_compile Activity_2.py
             python -m py_compile Activity_3.py
             python -m py_compile Activity_4.py

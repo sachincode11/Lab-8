@@ -5,6 +5,9 @@ from tkinter.messagebox import showerror
 
 class TemperatureConverterApp:
     def __init__(self, root):
+        if root is None:
+            return # allow testing without GUI
+        
         self.root = root
         self.root.title('Temperature Converter')
         self.root.geometry('320x100')
